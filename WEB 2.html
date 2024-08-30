@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KEVIN NAZAR MUFADHOL</title>
+  <style>
+    /* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #2f2f2f; /* Warna hitam */
+  color: #fff; /* Warna putih */
+}
+
+header {
+  background-color: #1a1a1a; /* Warna hitam tua */
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff; /* Warna hijau */
+}
+nav {
+  background-color: #4f5350; /* Warna hijau tua */
+  padding: 1em;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  margin-top: 10px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: #ffffff; /* Warna hitam */
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+nav a:hover {
+  color: #000000; /* Warna hitam */
+  background-color: #4CAF50; /* Warna hijau tua gelap */
+}
+
+nav a.active {
+  color: #000000; /* Warna hitam */
+  border-bottom: 2px solid #4CAF50;
+}
+button {
+  background-color: #4CAF50; /* Warna hijau */
+  color: #ececec; /* Warna putih */
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  border-radius: 5px; /* Add rounded corner */
+}
+
+button:hover {
+  background-color: #3e8e41; /* Warna hijau tua */
+}
+
+#menu-button {
+  background-color: #4CAF50; /* Warna hijau */
+  color: #fff; /* Warna putih */
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  border-radius: 5px; /* Add rounded corner */
+}
+
+#menu-button:hover {
+  background-color: #3e8e41; /* Warna hijau tua */
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+section {
+  background-color: #2f2f2f; /* Warna hitam */
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #4CAF50; /* Warna hijau */
+  background-color: #2f2f2f; /* Warna hitam */
+  padding: 10px 20px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.image-grid img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.image-grid img:hover {
+  transform: scale(1.1);
+}
+
+/* Search Input Styles */
+
+#search-input {
+  background-color: #fff; /* Warna putih */
+  border: 1px solid #ddd; /* Warna abu-abu muda */
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #333; /* Warna hitam */
+  border-radius: 10px;
+  width: 200px;
+  transition: width 0.2s ease-in-out;
+}
+
+#search-input:focus {
+  width: 250px;
+  background-color: #fff; /* Warna putih */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#search-input::placeholder {
+  color: #ccc; /* Warna abu-abu */
+}
+
+/* Search Button Styles */
+
+#menu-button {
+  background-color: #4CAF50; /* Warna hijau */
+  color: #fff; /* Warna putih */
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+#menu-button:hover {
+  background-color: #3e8e41; /* Warna hijau tua */
+}
+.image-grid img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.image-grid img:hover {
+  transform: scale(1.1);
+}
+
+.image-grid figcaption {
+  background-color: #4CAF50; /* Warna hijau */
+  color: #fff; /* Warna putih */
+  padding: 10px;
+  border-radius: 0px; /* Sudut tidak lancip */
+  font-size: 16px;
+  text-align: center;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>WALLPAPER</h1>
+    <nav>
+      <ul>
+          <li><a href="#wallpaper-anime">Wallpaper Anime</a></li>
+          <li><a href="#wallpaper-alam">Wallpaper Alam</a></li>
+          <li><a href="#wallpaper-mobil">Wallpaper Mobil</a></li>
+          <li><a href="#wallpaper-abstrak">Wallpaper Abstrak</a></li>
+      </ul>
+  </nav>
+    <button id="home-button">Home</button>
+    <input type="search" id="search-input" placeholder="Search...">
+    <button id="menu-button">Menu</button>
+  </header>
+  <main>
+        <div id="wallpaper-anime">
+    <section id="anime">
+      <h2>Anime</h2>
+      <div class="image-grid">
+        <img src="D:\GAMBAR\walpapper 1.jpg" alt="Anime Wallpaper 1">
+        <img src="D:\GAMBAR\wallpapwer 2.jpg" alt="Anime Wallpaper 2">
+        <img src="D:\GAMBAR\walpapper 3.jpg" alt="Anime Wallpaper 3">
+        <img src="D:\GAMBAR\walpaper 4.jpg" alt="Anime Wallpaper 4">
+        <img src="D:\GAMBAR\walpapper 5.jpg" alt="Anime Wallpaper 5">
+        <img src="D:\GAMBAR\kanji.jpg" alt="Anime Wallpaper 6">
+      </div>
+    </section>
+    <div id="wallpaper-alam">
+    <section id="alam">
+      <h2>Alam</h2>
+      <div class="image-grid">
+        <img src="D:\GAMBAR\bromo.jpg" alt="Alam Wallpaper 1">
+        <img src="D:\GAMBAR\alam 5.jpg" alt="Alam Wallpaper 2">
+        <img src="D:\GAMBAR\alam 4.jpg" alt="Alam Wallpaper 3">
+        <img src="D:\GAMBAR\alam 3.jpg" alt="Alam Wallpaper 4">
+        <img src="D:\GAMBAR\alam 2.jpg" alt="Alam Wallpaper 5">
+        <img src="D:\GAMBAR\alam 1.jpg" alt="Alam Wallpaper 6">
+      </div>
+    </section>
+    <div id="wallpaper-mobil">
+    <section id="mobil">
+      <h2>Mobil</h2>
+      <div class="image-grid">
+        <img src="D:\GAMBAR\mabil.jpg" alt="Mobil Wallpaper 1">
+        <img src= "D:\GAMBAR\mobil 1.jpg" alt="Mobil Wallpaper 2">
+        <img src="D:\GAMBAR\mobil 2.jpg" alt="Mobil Wallpaper 3">
+        <img src="D:\GAMBAR\mobil 3.jpg" alt="Mobil Wallpaper 4">
+        <img src="D:\GAMBAR\mobil 4.jpg" alt="Mobil Wallpaper 5">
+        <img src="D:\GAMBAR\mobil 5.jpg" alt="Mobil Wallpaper 6">
+      </div>
+    </section>
+    <div id="wallpaper-abstrak">
+    <section id="abstrak">
+      <h2>Abstrak</h2>
+      <div class="image-grid">
+        <img src="D:\GAMBAR\abstrac.jpg" alt="Abstrac Wallpaper 1">
+        <img src="D:\GAMBAR\abstrac 1.jpg" alt="Abstrac Wallpaper 2">
+        <img src="D:\GAMBAR\abstrac 2.jpg" alt="Abstrac Wallpaper 3">
+        <img src="D:\GAMBAR\abstrac 3.jpg" alt="Abstrac Wallpaper 4">
+        <img src="D:\GAMBAR\abstrac 5.png" alt="Abstrac Wallpaper 5">
+        <img src="D:\GAMBAR\abstrac 4.jpg" alt="Abstrac Wallpaper 6">
+      </div>
+    </section>
+  </main>
+  <script>
+const images = document.querySelectorAll('.image-grid img');
+
+images.forEach((image) => {
+  let isLarge = false;
+  image.addEventListener('click', () => {
+    if (!isLarge) {
+      image.style.transform = 'scale(1.5)';
+      image.style.transition = 'transform 0.5s ease-in-out';
+      isLarge = true;
+    } else {
+      image.style.transform = 'scale(1)';
+      image.style.transition = 'transform 0.5s ease-in-out';
+      isLarge = false;
+    }
+  });
+});
+  </script>
+</body>
+</html>
